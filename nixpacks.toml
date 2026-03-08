@@ -5,4 +5,4 @@ aptPkgs = ["python3"]
 commands = ["echo Building..."]
 
 [[phases.start]]
-cmd = ["python3", "-m", "http.server", "$PORT"]
+cmd = ["python3", "-m", "http.server", "8080", "--bind", "0.0.0.0"]
