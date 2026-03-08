@@ -1,0 +1,8 @@
+[[phases.setup]]
+aptPkgs = ["python3"]
+
+[[phases.build]]
+commands = ["echo Building..."]
+
+[[phases.start]]
+cmd = ["python3", "-m", "http.server", "$PORT"]
